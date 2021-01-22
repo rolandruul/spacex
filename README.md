@@ -8,14 +8,16 @@ Shipments are loaded from project description's repository, then saved locally i
 
 Structure:
 
-/src
-  /components - All components used
-  /constants  - Constants (routes, api urls etc)
-  /fonts      - Fonts used
-  /img        - Images and icons used
-  /pages      - Contains all main pages
-  /styles     - Styles
-  /utils      - Helper functions etc
+<dl>
+  <dt>/src</dt>
+  <dd>/components - All components used</dd>
+  <dd>/constants  - Constants (routes, api urls etc)</dd>
+  <dd>/fonts      - Fonts used</dd>
+  <dd>/img        - Images and icons used</dd>
+  <dd>/pages      - Contains all main pages</dd>
+  <dd>/styles     - Styles</dd>
+  <dd>/utils      - Helper functions etc</dd>
+</dl>
 
 /pages/Shipment - is main page for shipments view.
 
