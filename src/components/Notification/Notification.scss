@@ -1,0 +1,33 @@
+.notification {
+  text-align: center;
+
+  h2 {
+    margin: 1rem 0 1.5rem 0;
+    font-size: rem(18);
+    font-weight: 400;
+  }
+
+  &-fetch {
+    margin-top: calc(50vh - 72px);
+
+    img {
+      position: relative;
+      left: 1rem;
+    }
+  }
+
+  &-container {
+    position: absolute;
+    top: 95px;
+    right: 1rem;
+    z-index: 1;
+  }
+
+  &-message {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: #fff;
+    background: $color-green;
+    border: 1px solid $color-green-dark;
+  }
+}

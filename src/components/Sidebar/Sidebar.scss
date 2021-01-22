@@ -1,0 +1,59 @@
+.sidebar {
+
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 275px;
+  padding-bottom: 150px;
+  overflow-y: scroll;
+  background: #fff;
+  filter: drop-shadow($box-shadow-right);
+  @include breakpoint(md) {
+    display: block;
+  }
+
+  h2 {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 1rem;
+    z-index: 1;
+    font-size: rem(18);
+    font-weight: 400;
+    color: $color-gray-sidebar;
+    background: #fff;
+    box-shadow: $box-shadow-light;
+  }
+
+  &-section {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: $color-primary;
+    background: $color-gray-light;
+  }
+
+  &-link {
+    display: flex;
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: $color-gray-sidebar;
+    background: #fff;
+    text-decoration: none;
+    &:hover {
+      background: $color-gray-light;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-gray-light;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      width: 14px;
+      height:14px;
+      top: calc(50% - 7px);
+      right: calc(1rem - 7px);
+      background: url(./../../img/ArrowRight.svg) no-repeat;
+    }
+  }
+
+}

@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-primary;
+  box-shadow: $box-shadow;
+
+  img {
+    width: 115px;
+    @include breakpoint(sm) {
+      width: auto;
+    }
+  }
+
+  .btn {
+    width: 75px;
+  }
+
+  .btn-container {
+    text-align: right;
+    .btn {
+      margin-right: 0;
+      &:last-child {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

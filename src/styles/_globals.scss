@@ -1,0 +1,44 @@
+// Breakpoints for media queries
+$breakpoints: (
+  'xs':  0px,
+  'sm':  576px,
+  'md':  768px,
+  'lg':  992px,
+  'xl':  1200px,
+  'xxl': 1400px
+) !default;
+
+// Container max-width related to breakpoint
+$breakpoint-max-width: (
+  // 'xs' is relative to 'sm'
+  'sm':  540px,
+  'md':  720px,
+  'lg':  960px,
+  'xl':  1140px,
+  'xxl': 1320px
+) !default;
+
+// Colors
+$color-primary: #05295f;
+$color-gray: #d6d6d6;
+$color-gray-dark: #A7A9AC;
+$color-gray-light: #F5F5F5;
+$color-gray-sidebar: #616161;
+$color-green: #5cb85c;
+$color-green-dark: #4cae4c;
+// Shadows
+$box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+$box-shadow-right: 4px 0px 5px rgba(0, 0, 0, 0.1);
+$box-shadow-light: 0px 3px 5px rgba(0, 0, 0, 0.05);
+
+// Content
+* {
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+}

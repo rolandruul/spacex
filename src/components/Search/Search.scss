@@ -1,0 +1,49 @@
+.search {
+  display: none;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  @include breakpoint(md) {
+    display: block;
+  }
+
+  .input {
+    margin: 0;
+  }
+
+  // Icon
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0.75rem;
+    left:0.75rem;
+    width: 15px;
+    height:16px;
+    background: url(./../../img/SearchIcon.svg) no-repeat;
+  }
+
+  // Results
+  &-results {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height:210px;
+    min-height: 50px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: $box-shadow;
+
+    a {
+      display: flex;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: $color-gray-sidebar;
+      &:hover {
+        background: $color-gray-light;
+      }
+    }
+  }
+}

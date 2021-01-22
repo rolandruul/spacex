@@ -1,0 +1,33 @@
+.shipment-info {
+  width: 100%;
+  padding: 1rem;
+
+  @include breakpoint(md) {
+    padding: 2rem;
+    margin-left: 275px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  &__email {
+    margin-top: 0;
+    color: $color-gray-dark;
+  }
+
+  &__label {
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+
+  &__shipment {
+    margin-bottom: 2rem;
+    width: 100%;
+    @extend .input;
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+}
